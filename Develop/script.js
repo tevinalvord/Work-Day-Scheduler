@@ -95,19 +95,9 @@ setInterval(function() {
 
 setCurrentHour();
 
-// $("textarea").on("click", function() {
-//     console.log("A text area was clicked");
-// });
-
-// $("#10am").on("click", "textarea", function() {
-//     console.log("10am text area was clicked");
-// });
-
 var loadEvents = function() {
 
     events = JSON.parse(localStorage.getItem("events"));
-
-    // if nothing is in local storage, create a new object to track event for each hour
 
     if (!events) {
         events = {
