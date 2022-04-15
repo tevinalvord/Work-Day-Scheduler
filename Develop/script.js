@@ -1,23 +1,7 @@
 var currentDay = moment().format("dddd, MMMM Do");
-
-$("#currentDay").text(currentDay);
-
 var currentHour = moment().format("ha")
 
-switch(currentHour) {
-    case "9pm":
-
-        break;
-
-}
-
-$("#9am").on("click", "textarea", function() {
-    console.log("9am text area clicked");
-});
-
-$("#10am").on("click", "textarea", function() {
-    console.log("10am text area clicked");
-});
+$("#currentDay").text(currentDay);
 
 setInterval(function() {
 
@@ -85,6 +69,14 @@ setInterval(function() {
     }
 
 }, (1000 * 60) * 60);
+
+$("#9am").on("click", "textarea", function() {
+    console.log("9am text area clicked");
+});
+
+$("#10am").on("click", "textarea", function() {
+    console.log("10am text area clicked");
+});
 
 // switch(currentHour) {
 //     case "12am":
